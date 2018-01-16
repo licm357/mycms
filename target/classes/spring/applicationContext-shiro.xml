@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+				         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+				         http://www.springframework.org/schema/context
+				         http://www.springframework.org/schema/context/spring-context-3.0.xsd
+				         http://www.springframework.org/schema/tx
+				         http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+				         http://www.springframework.org/schema/aop 
+				         http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+	<!-- 将shiro全部类的生命周期交给spring管理 -->
+	<bean id="lifeCycleBeanProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"></bean>
+
+	<!-- 指定为shiro生成代理对象 depends-on：表示强调为谁生成代理对象 1.jdk 2.cglib动态代理，有无接口都可生成代理对象，并且代理对象是目标对象的子类 
+		说明：shiro的源码中大部分使用的是继承的思想，没有使用接口，jdk的动态代理不会生效。所以使用cglib动态代理 -->
+	<bean
+		class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"
+		depends-on="lifeCycleBeanProcessor">
+		<!-- 强制使用cglib动态代理生成代理对象，没有接口 -->
+		<property name="proxyTargetClass" value="true"></property>
+	</bean>
+
+	<!-- 如果采用aop注解，则也强制使用cglib动态代理 -->
+	<aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy>
+
+	<!-- shiro安全中心，用户数据校验和判断 -->
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<!-- 程序员手动添加，定义需要的数据格式和类型 -->
+		<property name="realm" ref="AuthRealm"></property>
+	</bean>
+	<bean id="AuthRealm" class="cn.mycms.share.shiro.AuthRealm">
+		<!-- 需要在内部配置加密处理 -->
+		<property name="credentialsMatcher" ref="authCredential"></property>
+	</bean>
+	<!-- 配置加密处理的bean -->
+	<bean id="authCredential" class="cn.mycms.share.shiro.AuthCredential"></bean>
+	<!-- 权限控制的组件需要引入shiro安全中心做判断 -->
+	<bean
+		class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+		<property name="securityManager" ref="securityManager"></property>
+	</bean>
+
+	<!-- -->
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<!-- name属性名称不能随意写，引入shiro安全中心 -->
+		<property name="securityManager" ref="securityManager"></property>
+		<!-- 默认的登陆页面,如果用户没有登陆或者登陆信息错误时，所拦截的页面就是index.jsp -->
+		<property name="loginUrl" value="/index.jsp"></property>
+		<!-- 过滤器链，多个 -->
+		<property name="filterChainDefinitions">
+			<value>
+				<!-- 拦截策略 authc:拦截 anon:放行 /staticfile/**=anon :放行所有静态资源 1./**=authc 
+					表示全部的请求资源都被拦截 -->
+				/staticfile/**=anon
+				/toLogin.action=anon
+				/login.action=anon
+				/**=authc
+
+			</value>
+		</property>
+
+	</bean>
+
+
+</beans> 
