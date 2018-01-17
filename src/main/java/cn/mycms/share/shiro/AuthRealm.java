@@ -19,7 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 
 public class AuthRealm extends AuthorizingRealm {
-	@Autowired
+
 	//private UserService userService;
 	// 权限控制
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principal) {

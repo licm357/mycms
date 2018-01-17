@@ -19,12 +19,13 @@ public class AuthCredential extends  SimpleCredentialsMatcher{
 	 */
 	@Override
 	public boolean doCredentialsMatch(AuthenticationToken token, AuthenticationInfo info) {
-		UsernamePasswordToken loginToken=(UsernamePasswordToken) token;
+		/*UsernamePasswordToken loginToken=(UsernamePasswordToken) token;
 		String username=loginToken.getUsername();
 		String password=String.valueOf(loginToken.getPassword());
 		String loginPassword=Md5HashPassword.getMd5Hash(password, username);
 		loginToken.setPassword(loginPassword.toCharArray());
-		return super.doCredentialsMatch(loginToken, info);
+		return super.doCredentialsMatch(loginToken, info);*/
+		return false;
 		
 	}
 }
