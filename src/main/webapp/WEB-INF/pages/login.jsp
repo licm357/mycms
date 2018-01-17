@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Login Form Template</title>
+<title>Company Login</title>
 <!-- CSS -->
 <link rel="stylesheet"
 	href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
@@ -39,13 +39,13 @@
 				<div class="row">
 					<div class="col-sm-8 col-sm-offset-2 text">
 						<h1>
-							<strong>Bootstrap</strong> Login Form
+							<strong>Company</strong> Login
 						</h1>
 						<div class="description">
 							<p>
-								This is a free responsive login form made with Bootstrap.
-								Download it on <a href="http://azmind.com"><strong>AZMIND</strong></a>,
-								customize and use it as you like!
+								This is a free state to resource,Welcome to my home
+								<!-- Download it on <a href="http://azmind.com"><strong>AZMIND</strong></a>,
+								customize and use it as you like! -->
 							</p>
 						</div>
 					</div>
@@ -65,22 +65,22 @@
 							<form role="form" action="" method="post" class="login-form">
 								<div class="form-group">
 									<label class="sr-only" for="form-username">Username</label> <input
-										type="text" name="form-username" placeholder="Username..."
+										type="text" name="form-username" placeholder="用户名..."
 										class="form-username form-control" id="form-username">
 								</div>
 								<div class="form-group">
 									<label class="sr-only" for="form-password">Password</label> <input
-										type="password" name="form-password" placeholder="Password..."
+										type="password" name="form-password" placeholder="密码..."
 										class="form-password form-control" id="form-password">
 								</div>
-								<button type="submit" class="btn">Sign in!</button>
+								<button type="submit" class="btn">登录</button>
 							</form>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-6 col-sm-offset-3 social-login">
-						<h3>...or login with:</h3>
+						<p>...或者通过以下方式进行注册:</p>
 						<div class="social-login-buttons">
 							<a class="btn btn-link-2" href="#"> <i class="fa fa-facebook"></i>
 								Facebook
