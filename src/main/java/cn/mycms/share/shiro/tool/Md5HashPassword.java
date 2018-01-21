@@ -8,7 +8,7 @@ public class Md5HashPassword {
 		return md5Hash.toString();
 	}
 	public static void main(String[] args) {
-		String passw=Md5HashPassword.getMd5Hash("admin1", "admin1");
+		String passw=Md5HashPassword.getMd5Hash("user2", "user2");
 		System.out.println(passw);
 	}
 

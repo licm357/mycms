@@ -12,25 +12,21 @@
 <link rel="stylesheet"
 	href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
 <link rel="stylesheet"
-	href="${ctx}/staticfile/assets/font-awesome/css/font-awesome.min.css">
+	href="${ctx}/staticfile/login/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet"
-	href="${ctx}/staticfile/assets/css/form-elements.css">
-<link rel="stylesheet" href="${ctx}/staticfile/assets/css/style.css">
-
-<!-- <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script> -->
-
+	href="${ctx}/staticfile/login/css/form-elements.css">
+<link rel="stylesheet" href="${ctx}/staticfile/login/css/style.css">
 <link rel="shortcut icon"
-	href="${ctx}/staticfile/assets/ico/favicon.png">
+	href="${ctx}/staticfile/login/ico/favicon.png">
 <link rel="apple-touch-icon-precomposed" sizes="144x144"
-	href="${ctx}/staticfile/assets/ico/apple-touch-icon-144-precomposed.png">
+	href="${ctx}/staticfile/login/ico/apple-touch-icon-144-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114"
-	href="${ctx}/staticfile/assets/ico/apple-touch-icon-114-precomposed.png">
+	href="${ctx}/staticfile/login/ico/apple-touch-icon-114-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72"
-	href="${ctx}/staticfile/assets/ico/apple-touch-icon-72-precomposed.png">
+	href="${ctx}/staticfile/login/ico/apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed"
-	href="${ctx}/staticfile/assets/ico/apple-touch-icon-57-precomposed.png">
+	href="${ctx}/staticfile/login/ico/apple-touch-icon-57-precomposed.png">
 </head>
-
 <body>
 	<!-- Top content -->
 	<div class="top-content">
@@ -62,18 +58,19 @@
 							</div>
 						</div>
 						<div class="form-bottom">
-							<form role="form" action="" method="post" class="login-form">
+						${errorInfo}
+							<form role="form" action="${ctx}/login.action" method="post" class="login-form">
 								<div class="form-group">
 									<label class="sr-only" for="form-username">Username</label> <input
-										type="text" name="form-username" placeholder="用户名..."
-										class="form-username form-control" id="form-username">
+										type="text" name="username" placeholder="用户名..."
+										class="form-username form-control" id="userName" v-model="item.userName">
 								</div>
 								<div class="form-group">
 									<label class="sr-only" for="form-password">Password</label> <input
-										type="password" name="form-password" placeholder="密码..."
-										class="form-password form-control" id="form-password">
+										type="password" name="password" placeholder="密码..."
+										class="form-password form-control" id="passWord" v-model="item.passWord">
 								</div>
-								<button type="submit" class="btn">登录</button>
+								<button type="submit" class="btn"  v-on:click="login">登录</button>
 							</form>
 						</div>
 					</div>
@@ -97,8 +94,8 @@
 	</div>
 
 	<!-- Javascript -->
-	<script src="${ctx}/staticfile/assets/js/jquery-1.11.1.min.js"></script>
-	<script src="${ctx}/staticfile/assets/js/jquery.backstretch.min.js"></script>
-	<script src="${ctx}/staticfile/assets/js/scripts.js"></script>
+	<script src="${ctx}/staticfile/login/js/jquery-1.11.1.min.js"></script>
+	<script src="${ctx}/staticfile/login/js/jquery.backstretch.min.js"></script>
+	<script src="${ctx}/staticfile/login/js/login.js"></script>
 </body>
 </html>

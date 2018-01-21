@@ -1,29 +1,22 @@
 package cn.mycms.share.shiro;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.authz.AuthorizationInfo;
-import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
-import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 
-
+import cn.mycms.share.pojo.User;
+import cn.mycms.share.service.UserService;
 
 public class AuthRealm extends AuthorizingRealm {
-
-	//private UserService userService;
+	@Autowired
+	private UserService userService;
 	// 权限控制
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principal) {
-		return null;
 		/*List<String> priList=new ArrayList<>();
 		priList.add("系统管理");
 		priList.add("基础信息");
@@ -37,8 +30,8 @@ public class AuthRealm extends AuthorizingRealm {
 		List<String> priList=userService.findPriliLegeInfoList(user.getUserId());
 		//System.out.println("角色有："+priList);
 		SimpleAuthorizationInfo info=new SimpleAuthorizationInfo();
-		info.addStringPermissions(priList);
-		return info;*/
+		info.addStringPermissions(priList);*/
+		return null;
 	}
 
 	/**
@@ -49,19 +42,17 @@ public class AuthRealm extends AuthorizingRealm {
 	 * 3.获取数据后，通过info对象返回个shiro安全管理器
 	 */
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
-		return null;
-		/*UsernamePasswordToken loginToken=(UsernamePasswordToken) token;
+		UsernamePasswordToken loginToken=(UsernamePasswordToken) token;
 		String username=loginToken.getUsername();
 		User user=userService.findUserByUserName(username);
-		
-		*//**
+		/**
 		 * 1.principal:真实的用户对象,所以在loginController中通过subject.getPrincipal获取user对象
 		 * 2.credentials：真实的密码
 		 * 3.realmName:当前realm的名称
 		 * info被shiro安全中心接收到
-		 *//*
+		 */
 		AuthenticationInfo info=new SimpleAuthenticationInfo(user, user.getPassword(), this.getName());
-		return info;*/
+		return info;
 	}
 
 }

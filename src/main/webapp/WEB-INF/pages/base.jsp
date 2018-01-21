@@ -17,5 +17,6 @@
 <!-- bootstrap和vuejs引用的模板 -->
 <script language="javascript" src="${ctx}/staticfile/js/bootstrap.js"></script>
 <script language="javascript" src="${ctx}/staticfile/js/bootstrap.min.js"></script>
+<script language="javascript" src="${ctx}/staticfile/js/vue.js"></script>
 
  

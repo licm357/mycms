@@ -56,6 +56,8 @@
 				/staticfile/**=anon
 				/toLogin.action=anon
 				/login.action=anon
+				/home.action=anon
+				/back.action=anon
 				/**=authc
 			</value>
 		</property>
