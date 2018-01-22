@@ -1,3 +1,4 @@
+
 package cn.mycms.share.controller;
 
 import javax.servlet.http.HttpSession;
@@ -68,3 +69,4 @@ public class LoginController {
 	}
 
 }
+

@@ -12,7 +12,11 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+<<<<<<< HEAD
  	 <filter>  
+=======
+ 	<!-- <filter>  
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
       <description>shiro 权限拦截</description>  
       <filter-name>shiroFilter</filter-name>  
       <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>  
@@ -24,7 +28,11 @@
       <filter-mapping>  
           <filter-name>shiroFilter</filter-name>  
           <url-pattern>/*</url-pattern>  
+<<<<<<< HEAD
       </filter-mapping>   
+=======
+      </filter-mapping>   -->
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 	<!-- 编码过滤器，以UTF8编码 -->
 	<filter>
 		<filter-name>encodingFilter</filter-name>
