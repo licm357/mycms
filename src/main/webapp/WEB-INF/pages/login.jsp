@@ -16,22 +16,8 @@
 <link rel="stylesheet"
 	href="${ctx}/staticfile/login/css/form-elements.css">
 <link rel="stylesheet" href="${ctx}/staticfile/login/css/style.css">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> branch 'master' of https://github.com/licm357/mycms.git
-=======
->>>>>>> branch 'master' of https://github.com/licm357/mycms.git
-
-<!-- <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script> -->
-
->>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 <link rel="shortcut icon"
 	href="${ctx}/staticfile/login/ico/favicon.png">
-<link rel="apple-touch-icon-precomposed" sizes="144x144"
-	href="${ctx}/staticfile/login/ico/apple-touch-icon-144-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114"
 	href="${ctx}/staticfile/login/ico/apple-touch-icon-114-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72"
@@ -70,62 +56,19 @@
 							</div>
 						</div>
 						<div class="form-bottom">
-<<<<<<< HEAD
 						${errorInfo}
 							<form role="form" action="${ctx}/login.action" method="post" class="login-form">
-=======
-							<form role="form" action="" method="post" class="login-form">
-							 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/licm357/mycms.git
-=======
->>>>>>> branch 'master' of https://github.com/licm357/mycms.git
-=======
->>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 								<div class="form-group">
 									<label class="sr-only" for="form-username">Username</label> <input
-<<<<<<< HEAD
 										type="text" name="username" placeholder="用户名..."
-=======
-										type="text" name="form-username" placeholder="用户名..."
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/licm357/mycms.git
-=======
->>>>>>> branch 'master' of https://github.com/licm357/mycms.git
-=======
->>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 										class="form-username form-control" id="userName" v-model="item.userName">
 								</div>
 								<div class="form-group">
 									<label class="sr-only" for="form-password">Password</label> <input
-<<<<<<< HEAD
 										type="password" name="password" placeholder="密码..."
-=======
-										type="password" name="form-password" placeholder="密码..."
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> branch 'master' of https://github.com/licm357/mycms.git
-=======
->>>>>>> branch 'master' of https://github.com/licm357/mycms.git
-=======
->>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 										class="form-password form-control" id="passWord" v-model="item.passWord">
 								</div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 								<button type="submit" class="btn"  v-on:click="login">登录</button>
-=======
-								<button type="" class="btn"  v-on:click="login">登录</button>
->>>>>>> branch 'master' of https://github.com/licm357/mycms.git
-=======
-								<button type="" class="btn"  v-on:click="login">登录</button>
->>>>>>> branch 'master' of https://github.com/licm357/mycms.git
-=======
-								<button type="" class="btn"  v-on:click="login">登录</button>
->>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 							</form>
 						</div>
 					</div>

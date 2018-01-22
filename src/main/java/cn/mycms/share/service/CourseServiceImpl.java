@@ -12,7 +12,6 @@ import cn.mycms.share.pojo.Course;
 public class CourseServiceImpl implements CourseServcie{
 	@Autowired
 	private CourseMapper courseMapper;
-	@Override
 	public Course findCourse() {
 		Course course=new Course();
 		course.setCourseType(0L);
@@ -22,7 +21,6 @@ public class CourseServiceImpl implements CourseServcie{
 		}
 		return null;
 	}
-	@Override
 	public List<Course> findCourseList() {
 		Course course=new Course();
 		//course.setCourseType(1L);

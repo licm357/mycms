@@ -12,7 +12,6 @@ public class ChatServiceImpl implements ChatService{
 	@Autowired
 	private ChatMapper chatMapper;
 
-	@Override
 	public List<Chat> findChat() {
 		Chat chat=new Chat();
 		chat.setChatType(0L);

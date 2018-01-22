@@ -13,7 +13,6 @@ public class ImgServiceImpl implements ImgService{
 	@Autowired
 	private ImgMapper imgMapper;
 
-	@Override
 	public List<TurnImage> findTrunImg() {
 		TurnImage imgs=new TurnImage();
 		imgs.setImgType(1L);

@@ -13,7 +13,6 @@ public class UserServiceImpl implements UserService{
 
 	@Autowired
 	private UserMapper userMapper;
-	@Override
 	public User findUserByUserName(String username) {
 		User user=new User();
 		user.setUserName(username);
