@@ -56,7 +56,10 @@
 				/staticfile/**=anon
 				/toLogin.action=anon
 <<<<<<< HEAD
+<<<<<<< HEAD
 				/login.action=anon
+=======
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 =======
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 				/home.action=anon

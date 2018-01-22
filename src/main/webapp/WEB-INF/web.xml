@@ -13,7 +13,11 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 <<<<<<< HEAD
+<<<<<<< HEAD
  	 <filter>  
+=======
+ 	<!-- <filter>  
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 =======
  	<!-- <filter>  
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git
@@ -29,7 +33,11 @@
           <filter-name>shiroFilter</filter-name>  
           <url-pattern>/*</url-pattern>  
 <<<<<<< HEAD
+<<<<<<< HEAD
       </filter-mapping>   
+=======
+      </filter-mapping>   -->
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 =======
       </filter-mapping>   -->
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git

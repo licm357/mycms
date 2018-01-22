@@ -17,7 +17,10 @@
 	href="${ctx}/staticfile/login/css/form-elements.css">
 <link rel="stylesheet" href="${ctx}/staticfile/login/css/style.css">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 
 <!-- <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script> -->
 
@@ -70,6 +73,9 @@
 =======
 							<form role="form" action="" method="post" class="login-form">
 							 
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
+=======
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 								<div class="form-group">
 									<label class="sr-only" for="form-username">Username</label> <input
@@ -77,6 +83,9 @@
 										type="text" name="username" placeholder="用户名..."
 =======
 										type="text" name="form-username" placeholder="用户名..."
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
+=======
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 										class="form-username form-control" id="userName" v-model="item.userName">
 								</div>
@@ -86,11 +95,18 @@
 										type="password" name="password" placeholder="密码..."
 =======
 										type="password" name="form-password" placeholder="密码..."
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
+=======
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 										class="form-password form-control" id="passWord" v-model="item.passWord">
 								</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 								<button type="submit" class="btn"  v-on:click="login">登录</button>
+=======
+								<button type="" class="btn"  v-on:click="login">登录</button>
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 =======
 								<button type="" class="btn"  v-on:click="login">登录</button>
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git
