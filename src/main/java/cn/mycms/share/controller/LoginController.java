@@ -53,6 +53,7 @@ public class LoginController {
 			return "redirect:/back.action";
 		} catch (AuthenticationException e) {
 			//在控制台输出错误信息
+			
 			e.printStackTrace();
 			//用户的用户名或密码错误
 			model.addAttribute("errorInfo", "用户名或密码不正确!");

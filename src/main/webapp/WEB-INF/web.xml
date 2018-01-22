@@ -14,7 +14,11 @@
 	</listener>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  	 <filter>  
+=======
+ 	<!-- <filter>  
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 =======
  	<!-- <filter>  
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git
@@ -34,7 +38,11 @@
           <url-pattern>/*</url-pattern>  
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       </filter-mapping>   
+=======
+      </filter-mapping>   -->
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 =======
       </filter-mapping>   -->
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git

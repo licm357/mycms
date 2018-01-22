@@ -18,7 +18,10 @@
 <link rel="stylesheet" href="${ctx}/staticfile/login/css/style.css">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 =======
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 
@@ -74,6 +77,9 @@
 							<form role="form" action="" method="post" class="login-form">
 							 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
+=======
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 =======
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git
@@ -84,6 +90,9 @@
 =======
 										type="text" name="form-username" placeholder="用户名..."
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
+=======
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 =======
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git
@@ -96,6 +105,9 @@
 =======
 										type="password" name="form-password" placeholder="密码..."
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
+=======
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 =======
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git
@@ -103,7 +115,11 @@
 								</div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 								<button type="submit" class="btn"  v-on:click="login">登录</button>
+=======
+								<button type="" class="btn"  v-on:click="login">登录</button>
+>>>>>>> branch 'master' of https://github.com/licm357/mycms.git
 =======
 								<button type="" class="btn"  v-on:click="login">登录</button>
 >>>>>>> branch 'master' of https://github.com/licm357/mycms.git
